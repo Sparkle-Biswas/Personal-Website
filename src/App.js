@@ -1,10 +1,17 @@
 import './App.css';
 import ExtensionIcon from '@mui/icons-material/Extension';
 import Box from '@mui/material/Box';
+import Modal from '@mui/joy/Modal';
+import SchoolIcon from '@mui/icons-material/School';
 import EmailPuzzle from './Components/EmailPuzzle';
 import GithubPuzzle from './Components/GithubPuzzle';
 import LinkedinPuzzle from './Components/LinkedinPuzzle';
-import InstaPuzzle from './Components/InstaPuzzle';
+import ResumePuzzle from './Components/ResumePuzzle';
+import NavigationPuzzle from './Components/NavigationPuzzle';
+import TopRightPiece from './Components/TopRightPiece';
+import TopLeftPiece from './Components/TopLeftPiece';
+import BottomLeftPiece from './Components/BottomLeftPiece';
+import BottomRightPiece from './Components/BottomRightPiece';
 import { styled } from '@mui/system';
 
 const BottomBox = styled(Box)({
@@ -42,13 +49,13 @@ function App() {
     window.open('https://github.com/Sparkle-Biswas', '_blank');
   };
 
-  const instaToggle = () => {
-    alert("clicked");
+  const resumeToggle = () => {
+    alert("navigate to resume");
   };
 
   return (
     <div className="App">
-      <Box sx={{display:'flex'}}>
+      <Box sx={{display:'flex', alignItems:'center', gap:'2em'}}>
         <Box sx={{ display: 'flex', flexDirection:'row', padding:'1em'}}>
           <RightBox />        
           <Box sx={{ display: 'flex', flexDirection:'column'}}>
@@ -59,6 +66,10 @@ function App() {
                 <Box sx={{display: 'flex', height:'95%', width:'95%', alignItems:'center', flexDirection:'column', gap: '0.5em'}}>
                   <h2>SPARKLE BISWAS</h2>
                   <p>Designer | Programmer | Problem Solver | Leader</p>
+                  <Box sx={{display:'flex', alignItems:'center', gap:'10px'}}>
+                    <SchoolIcon sx={{color: 'rgb(157, 105, 225)'}}/>
+                    <p>Purdue University CS '23</p>
+                  </Box>
                   <Box sx={{ display:'flex', flexDirection:'column', marginTop:'2.5em'}}>
                     <Box sx={{display:'flex', flexDirection:'row'}}>
                       <EmailPuzzle emailToggle={emailToggle}/>
@@ -66,7 +77,7 @@ function App() {
                     </Box>
                     <Box sx={{display:'flex', flexDirection:'row'}}>
                       <LinkedinPuzzle linkToggle={linkToggle}/>
-                      <InstaPuzzle instaToggle={instaToggle}/>
+                      <ResumePuzzle resumeToggle={resumeToggle}/>
                     </Box>
                   </Box>
                 </Box>
@@ -75,6 +86,17 @@ function App() {
             <BottomBox/>
           </Box>
         </Box>
+        <Box sx={{display:'flex', flexDirection:'column', width:'40em', backgroundColor:'black', height:'fit-content', gap:'4em', paddingLeft:'1em'}}>
+          <Box sx={{display:'flex',  gap:'1em'}}>
+            <TopLeftPiece />
+            <TopRightPiece />
+          </Box>
+          <Box sx={{display:'flex',  gap:'1em'}}>
+            <BottomLeftPiece/>
+            <BottomRightPiece/>
+          </Box>
+        </Box>
+        
       </Box>
     </div>
   );

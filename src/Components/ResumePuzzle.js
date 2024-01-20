@@ -1,7 +1,6 @@
 import '../App.js';
 import ExtensionIcon from '@mui/icons-material/Extension';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Box from '@mui/material/Box';
+import DescriptionIcon from '@mui/icons-material/Description';import Box from '@mui/material/Box';
 import { styled } from '@mui/system';
 
 const OutlineBox = styled(Box)({
@@ -24,8 +23,8 @@ const OutlineBox = styled(Box)({
 function InstaPuzzle(props) {
   return (
     <OutlineBox sx={{marginTop:'-0.5em'}} 
-    onClick={props.instaToggle}>
-        <InstagramIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
+    onClick={props.resumeToggle}>
+        <DescriptionIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
         <ExtensionIcon sx={{transform:'rotate(0deg)', fontSize:'5em', color: 'rgb(85, 9, 185)'}}/>
     </OutlineBox>
   )
