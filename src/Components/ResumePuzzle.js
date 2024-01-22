@@ -12,9 +12,9 @@ const OutlineBox = styled(Box)({
     borderRadius:'15px',
     border: '1px solid black',
     '&:hover': {
-        border: '1px solid white',
-        boxShadow: '0px 0px 6px white, inset 0px 0px 15px rgb(85, 9, 185)',
-        cursor: 'pointer'
+      transform: 'scale(1.1)',
+      transition: '0.3s ease-out',
+      cursor: 'pointer'
     },
 });
 

@@ -7,7 +7,6 @@ import EmailPuzzle from './Components/EmailPuzzle';
 import GithubPuzzle from './Components/GithubPuzzle';
 import LinkedinPuzzle from './Components/LinkedinPuzzle';
 import ResumePuzzle from './Components/ResumePuzzle';
-import NavigationPuzzle from './Components/NavigationPuzzle';
 import TopRightPiece from './Components/TopRightPiece';
 import TopLeftPiece from './Components/TopLeftPiece';
 import BottomLeftPiece from './Components/BottomLeftPiece';
@@ -55,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      <Box sx={{display:'flex', alignItems:'center', gap:'2em'}}>
+      <Box sx={{display:'flex', alignItems:'center', gap:'4em', paddingTop:'2em'}}>
         <Box sx={{ display: 'flex', flexDirection:'row', padding:'1em'}}>
           <RightBox />        
           <Box sx={{ display: 'flex', flexDirection:'column'}}>
@@ -86,7 +85,7 @@ function App() {
             <BottomBox/>
           </Box>
         </Box>
-        <Box sx={{display:'flex', flexDirection:'column', width:'40em', backgroundColor:'black', height:'fit-content', gap:'4em', paddingLeft:'1em'}}>
+        <Box sx={{display:'flex', flexDirection:'column', width:'40em', backgroundColor:'black', height:'fit-content', gap:'3em', paddingLeft:'1em'}}>
           <Box sx={{display:'flex',  gap:'1em'}}>
             <TopLeftPiece />
             <TopRightPiece />
