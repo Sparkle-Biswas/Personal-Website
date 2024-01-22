@@ -2,6 +2,7 @@ import '../App.js';
 import ExtensionIcon from '@mui/icons-material/Extension';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Box from '@mui/material/Box';
+import { Tooltip } from '@mui/material';
 import { styled } from '@mui/system';
 
 const OutlineBox = styled(Box)({
@@ -23,11 +24,13 @@ const OutlineBox = styled(Box)({
 
 function LinkedinPuzzle(props) {
   return (
-    <OutlineBox sx={{}} 
-    onClick={props.linkToggle}>
-        <LinkedInIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
-        <ExtensionIcon sx={{transform:'rotate(90deg)', fontSize:'5em', color: 'rgb(85, 9, 185)'}}/>
-    </OutlineBox>
+    <Tooltip title='LinkedIn'>
+      <OutlineBox
+      onClick={props.linkToggle}>
+          <LinkedInIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
+          <ExtensionIcon sx={{transform:'rotate(90deg)', fontSize:'5em', color: 'rgb(85, 9, 185)'}}/>
+      </OutlineBox>
+    </Tooltip>
   )
 }
 

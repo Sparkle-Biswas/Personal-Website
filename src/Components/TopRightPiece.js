@@ -1,11 +1,23 @@
-import React from 'react';
+import {React, useEffect, useState} from 'react';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/system';
 
 function TopRightPiece() {
+  const [loaded, setLoaded] = useState(false);
+    
+
+  useEffect(() => {
+      const timer = setTimeout(() => {
+      setLoaded(true);
+      }, 300);
+
+      return () => clearTimeout(timer);
+
+  }, []);
   return (
     <Box sx={{display:'flex', width:'16em', height:'12.1em', backgroundColor:'black',
-    overflow:'hidden', paddingLeft:'3px', paddingBottom:'2px', paddingTop:'2px', transform:'rotate(90deg)', marginTop:'1.8em'}}>
+    overflow:'hidden', paddingLeft:'3px', paddingBottom:'2px', paddingTop:'2px', marginTop:'1.8em',
+    transform: loaded ? 'translateX(0) translateY(0) rotate(90deg)' : 'translateX(150%) translateY(-1000%) rotate(180deg)',transition: 'transform 2s ease',}}>
         <Box sx={{display:'flex', width:'12em', height:'12em', backgroundColor:'black', zIndex:'1', border:'1px solid rgb(85, 9, 185)',
         borderRadius:'1em', boxShadow: '0px 2px 13px rgb(85, 9, 185), inset 0px 1px 11px rgb(85, 9, 185)', position:'relative'}}>
             <Box sx={{position:'absolute', width:'1em', height:'9em', background:'black', right:'0.19em', bottom:'1.8em', zIndex:'100'}} />

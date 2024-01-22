@@ -1,7 +1,9 @@
 import '../App.js';
 import ExtensionIcon from '@mui/icons-material/Extension';
-import DescriptionIcon from '@mui/icons-material/Description';import Box from '@mui/material/Box';
+import DescriptionIcon from '@mui/icons-material/Description';
+import Box from '@mui/material/Box';
 import { styled } from '@mui/system';
+import { Tooltip } from '@mui/material';
 
 const OutlineBox = styled(Box)({
     width: '5em',
@@ -20,14 +22,16 @@ const OutlineBox = styled(Box)({
 
 
 
-function InstaPuzzle(props) {
+function ResumePuzzle(props) {
   return (
-    <OutlineBox sx={{marginTop:'-0.5em'}} 
-    onClick={props.resumeToggle}>
-        <DescriptionIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
-        <ExtensionIcon sx={{transform:'rotate(0deg)', fontSize:'5em', color: 'rgb(85, 9, 185)'}}/>
-    </OutlineBox>
+    <Tooltip title='Resume'>
+      <OutlineBox sx={{marginTop:'-0.5em'}} 
+      onClick={props.resumeToggle}>
+          <DescriptionIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
+          <ExtensionIcon sx={{transform:'rotate(0deg)', fontSize:'5em', color: 'rgb(85, 9, 185)'}}/>
+      </OutlineBox>
+    </Tooltip>
   )
 }
 
-export default InstaPuzzle
+export default ResumePuzzle

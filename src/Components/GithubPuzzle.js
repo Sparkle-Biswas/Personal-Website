@@ -2,6 +2,7 @@ import '../App.js';
 import ExtensionIcon from '@mui/icons-material/Extension';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Box from '@mui/material/Box';
+import { Tooltip } from '@mui/material';
 import { styled } from '@mui/system';
 
 const OutlineBox = styled(Box)({
@@ -22,11 +23,13 @@ const OutlineBox = styled(Box)({
 
 function GithubPuzzle(props) {
   return (
-    <OutlineBox sx={{marginTop:'-0.5em'}}
-    onClick={props.gitToggle}>
-        <GitHubIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
-        <ExtensionIcon sx={{transform:'rotate(0deg)', fontSize:'5em', color: 'rgb(85, 9, 185)'}}/>
-    </OutlineBox>
+    <Tooltip title='Github' placement='top'>
+      <OutlineBox sx={{marginTop:'-0.5em'}}
+      onClick={props.gitToggle}>
+          <GitHubIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
+          <ExtensionIcon sx={{transform:'rotate(0deg)', fontSize:'5em', color: 'rgb(85, 9, 185)'}}/>
+      </OutlineBox>
+    </Tooltip>
   )
 }
 

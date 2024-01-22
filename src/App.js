@@ -1,7 +1,7 @@
 import './App.css';
-import ExtensionIcon from '@mui/icons-material/Extension';
+import React, { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
-import Modal from '@mui/joy/Modal';
+import EmailModal from './Components/EmailModal';
 import SchoolIcon from '@mui/icons-material/School';
 import EmailPuzzle from './Components/EmailPuzzle';
 import GithubPuzzle from './Components/GithubPuzzle';
@@ -36,8 +36,27 @@ const RightBox = styled(Box)({
 });
 
 function App() {
+  const [loaded, setLoaded] = useState(false);
+    
+
+  useEffect(() => {
+      const timer = setTimeout(() => {
+      setLoaded(true);
+      }, 300);
+
+      return () => clearTimeout(timer);
+
+  }, []);
+
+  const [open, setOpen] = useState(false);
+
   const emailToggle = () => {
-    alert("clicked");
+    setOpen(true);
+    
+  };
+
+  const handleClose = () => {
+    setOpen(false);
   };
 
   const linkToggle = () => {
@@ -55,7 +74,9 @@ function App() {
   return (
     <div className="App">
       <Box sx={{display:'flex', alignItems:'center', gap:'4em', paddingTop:'2em'}}>
-        <Box sx={{ display: 'flex', flexDirection:'row', padding:'1em'}}>
+        <Box sx={{ display: 'flex', flexDirection:'row', padding:'1em',
+        transform: loaded ? 'translateX(0)' : 'translateX(-110%)',
+        transition: 'transform 1.3s ease',}}>
           <RightBox />        
           <Box sx={{ display: 'flex', flexDirection:'column'}}>
             <Box sx={{ display: 'flex', flexDirection:'column', backgroundColor:'black',
@@ -97,6 +118,10 @@ function App() {
         </Box>
         
       </Box>
+      <EmailModal
+      open={open}
+      handleClose={handleClose}
+      />
     </div>
   );
 }
