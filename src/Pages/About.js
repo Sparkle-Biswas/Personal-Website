@@ -1,0 +1,36 @@
+import React from 'react'
+import { Box } from '@mui/material'
+import photo from '../Images/headshot.png'
+import TopLeftPiece from '../Components/TopLeftPiece'
+
+function About() {
+  return (
+    <Box sx={{display:'flex',flexDirection:'column', height:'inherit', width:'inherit',
+    justifyContent:'center', backgroundColor:'black'}}>
+        <Box sx={{display:'flex', alignItems:'center', justifyContent:'center',
+         height:'inherit', width:'inherit'}}>
+            <Box sx={{ border:'1px solid rgb(85, 9, 185)', padding:'2em',
+             paddingRight:'2em', paddingLeft:'2em', width:'50%', height:'auto',
+             boxShadow: '0px 1px 11px rgb(96, 40, 169), inset 0px 1px 11px rgb(85, 9, 185)'}}>
+                <p style={{color:'aliceblue', fontSize:'1.3vw'}}> 
+                Hey there! I'm Sparkle Biswas, and I am passionate about
+                 designing, programming, and solving puzzles – 
+                 also why my website rocks the puzzle theme!
+                  I'm hoping to work in SWE roles that let me 
+                  dive into these passions and utilize my skills. 
+                  I would love to work with people who enjoy 
+                  collaborate and value compassion. Please 
+                  reach out if you are interested in working 
+                  with me or simply want to connect!
+                </p>
+            </Box>
+            <TopLeftPiece>
+                <img src={photo} alt="photo"
+                 style={{width:'5em'}}/>
+            </TopLeftPiece>
+        </Box>
+    </Box>
+  )
+}
+
+export default About
