@@ -1,18 +1,24 @@
 import React from 'react'
 import { Box } from '@mui/material'
 import photo from '../Images/headshot.png'
-import TopLeftPiece from '../Components/TopLeftPiece'
+import PhotoPiece from '../Components/PhotoPiece'
 
 function About() {
   return (
     <Box sx={{display:'flex',flexDirection:'column', height:'inherit', width:'inherit',
     justifyContent:'center', backgroundColor:'black'}}>
         <Box sx={{display:'flex', alignItems:'center', justifyContent:'center',
-         height:'inherit', width:'inherit'}}>
-            <Box sx={{ border:'1px solid rgb(85, 9, 185)', padding:'2em',
+         height:'inherit', width:'inherit', flexDirection:'column'}}>
+            <div style={{paddingLeft:"27em"}}>
+                <PhotoPiece>
+                <img src={photo} alt="photo"
+                 style={{width:'9.5em'}}/>
+                </PhotoPiece>
+            </div>
+            <Box sx={{ border:'1px solid rgb(85, 9, 185)', padding:'4em',
              paddingRight:'2em', paddingLeft:'2em', width:'50%', height:'auto',
              boxShadow: '0px 1px 11px rgb(96, 40, 169), inset 0px 1px 11px rgb(85, 9, 185)'}}>
-                <p style={{color:'aliceblue', fontSize:'1.3vw'}}> 
+                <p style={{color:'aliceblue', fontSize:'1.5vw'}}> 
                 Hey there! I'm Sparkle Biswas, and I am passionate about
                  designing, programming, and solving puzzles – 
                  also why my website rocks the puzzle theme!
@@ -24,13 +30,11 @@ function About() {
                   with me or simply want to connect!
                 </p>
             </Box>
-            <TopLeftPiece>
-                <img src={photo} alt="photo"
-                 style={{width:'5em'}}/>
-            </TopLeftPiece>
         </Box>
     </Box>
   )
 }
 
 export default About
+
+//
