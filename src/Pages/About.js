@@ -5,9 +5,9 @@ import PhotoPiece from '../Components/PhotoPiece'
 
 function About() {
   return (
-    <Box sx={{display:'flex',flexDirection:'column', height:'inherit', width:'inherit',
+    <div style={{display:'flex',flexDirection:'column', height:'inherit', width:'inherit',
     justifyContent:'center', backgroundColor:'black'}}>
-        <Box sx={{display:'flex', alignItems:'center', justifyContent:'center',
+        <div style={{display:'flex', alignItems:'center', justifyContent:'center',
          height:'inherit', width:'inherit', flexDirection:'column'}}>
             <div style={{paddingLeft:"27em"}}>
                 <PhotoPiece>
@@ -15,7 +15,7 @@ function About() {
                  style={{width:'9.5em'}}/>
                 </PhotoPiece>
             </div>
-            <Box sx={{ border:'1px solid rgb(85, 9, 185)', padding:'4em',
+            <div style={{ border:'1px solid rgb(85, 9, 185)', padding:'4em',
              paddingRight:'2em', paddingLeft:'2em', width:'50%', height:'auto',
              boxShadow: '0px 1px 11px rgb(96, 40, 169), inset 0px 1px 11px rgb(85, 9, 185)'}}>
                 <p style={{color:'aliceblue', fontSize:'1.5vw'}}> 
@@ -29,9 +29,9 @@ function About() {
                   reach out if you are interested in working 
                   with me or simply want to connect!
                 </p>
-            </Box>
-        </Box>
-    </Box>
+            </div>
+        </div>
+    </div>
   )
 }
 
