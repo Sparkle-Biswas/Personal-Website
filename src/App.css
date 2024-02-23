@@ -22,3 +22,24 @@ p{
   font-size: 1.3em;
   text-shadow: 0px 0px 9px rgb(85, 9, 185);
 }
+
+.spinDiv {
+  animation-name: spin;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+}
+
+.spinDiv:hover {
+  cursor: 'pointer',
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}

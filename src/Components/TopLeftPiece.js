@@ -6,7 +6,7 @@ function TopLeftPiece(props) {
   const [loaded, setLoaded] = useState(false);
   const navigate = useNavigate();
 
-  const MainBox = {
+  const mainBox = {
     display: 'flex',
     width: '16em',
     height: '12.1em',
@@ -26,7 +26,7 @@ function TopLeftPiece(props) {
     },
   };
 
-  const InnerBox = {
+  const innerBox = {
     display: 'flex',
     width: '12em',
     height: '12em',
@@ -36,6 +36,9 @@ function TopLeftPiece(props) {
     borderRadius: '1em',
     boxShadow: '0px 2px 13px rgb(85, 9, 185), inset 0px 1px 11px rgb(85, 9, 185)',
     position: 'relative',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   };
   
   const verticalBar = {
@@ -46,6 +49,9 @@ function TopLeftPiece(props) {
     right: '0.19em',
     bottom: '1.8em',
     zIndex: '100',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   };
   
   const horizontalBar = {
@@ -56,6 +62,9 @@ function TopLeftPiece(props) {
     right: '1em',
     bottom: '1.8em',
     zIndex: '100',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   };
   
   const firstCircle = {
@@ -66,6 +75,9 @@ function TopLeftPiece(props) {
     transform: 'translate(3.5em, 9em)',
     boxShadow: '0px 1px 11px rgb(85, 9, 185), inset 0px 1px 11px rgb(85, 9, 185)',
     border: '1px solid rgb(85, 9, 185)',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   };
   
   const secondCircle = {
@@ -77,17 +89,23 @@ function TopLeftPiece(props) {
     zIndex: '0',
     border: '1px solid rgb(85, 9, 185)',
     boxShadow: '0px 1px 11px rgb(85, 9, 185), inset 0px 1px 11px rgb(85, 9, 185)',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   };
   
   const infoContainer = {
     position: 'absolute',
     zIndex: '101',
-    right: '2.1em',
+    right: '1.1em',
     top: '1.5em',
     gap: '0.2em',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    '&:hover': {
+      cursor: 'pointer',
+    },
   };
   useEffect(() => {
       const timer = setTimeout(() => {
@@ -98,12 +116,14 @@ function TopLeftPiece(props) {
 
   }, []);
   return (
-    <Tooltip title='About Me!' placement='top'>
-      <div style={MainBox}
+    <Tooltip title='Projects' placement='top' sx={{'&:hover': {
+      cursor: 'pointer',
+    },}}>
+      <div style={mainBox}
       onClick={() => {
-        navigate("/about");
+        navigate("/projects");
       }}>
-          <div style={InnerBox}>
+          <div style={innerBox}>
               <div style={verticalBar} />
               <div style={horizontalBar} />
               <div style={firstCircle}/>
