@@ -1,0 +1,116 @@
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: black; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+
+h2{
+  font-family: 'Kanit', sans-serif;
+  color: aliceblue;
+  margin: 0;
+  font-size: 2.7em;
+  text-shadow: -3px 0px 20px rgb(25, 79, 228);
+}
+
+
+
+p{
+  font-family: 'Kanit', sans-serif;
+  
+  color: rgb(25, 79, 228);
+  margin: 0;
+  font-size: 1.3em;
+  text-shadow: 0px 0px 9px rgb(25, 79, 228);
+}
+
+.spinDiv {
+  animation-name: spin;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+}
+
+.spinDiv:hover {
+  cursor: 'pointer',
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+.rotateDiv {
+  animation-name: rotate;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+}
+
+@keyframes rotate {
+  from {
+      transform:rotateY(0deg);
+  }
+  to {
+      transform:rotateY(360deg);
+  }
+}
+
+.hoverDiv:hover {
+  cursor: pointer;
+}
+
+.balanceDiv {
+  animation-name: balance;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.balanceDiv:hover {
+  animation-name: balance;
+  animation-duration: 0ms;
+
+}
+
+
+@keyframes balance {
+  0% {
+    transform: rotate(-2deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}

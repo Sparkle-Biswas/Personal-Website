@@ -28,7 +28,7 @@ function LinkedinPuzzle(props) {
       <OutlineBox
       onClick={props.linkToggle}>
           <LinkedInIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
-          <ExtensionIcon sx={{transform:'rotate(90deg)', fontSize:'5em', color: 'rgb(85, 9, 185)'}}/>
+          <ExtensionIcon sx={{transform:'rotate(90deg)', fontSize:'5em', color: 'rgb(25, 79, 228)'}}/>
       </OutlineBox>
     </Tooltip>
   )

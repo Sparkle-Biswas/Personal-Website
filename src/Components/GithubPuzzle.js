@@ -27,7 +27,7 @@ function GithubPuzzle(props) {
       <OutlineBox sx={{marginTop:'-0.5em'}}
       onClick={props.gitToggle}>
           <GitHubIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
-          <ExtensionIcon sx={{transform:'rotate(0deg)', fontSize:'5em', color: 'rgb(85, 9, 185)'}}/>
+          <ExtensionIcon sx={{transform:'rotate(0deg)', fontSize:'5em', color: 'rgb(25, 79, 228)'}}/>
       </OutlineBox>
     </Tooltip>
   )

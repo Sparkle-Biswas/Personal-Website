@@ -28,8 +28,8 @@ const EmailModal = (props) => {
       >
         <div style={{backgroundColor:'black', height:'5em', width:'30em', outline:'none',
         borderRadius:'1em', display:'flex', alignItems:'center', justifyContent:'center',
-        flexDirection:'column', border:'2px solid rgb(85, 9, 185)', padding:'0.5em',
-        boxShadow:'0px 2px 11px rgb(96, 40, 169)'}}>
+        flexDirection:'column', border:'2px solid rgb(25, 79, 228)', padding:'0.5em',
+        boxShadow:'0px 2px 11px rgb(25, 79, 228)'}}>
           <div style={{display:'flex', gap:'1em', justifyContent:'center', alignItems:'center'}}>
             <p>
                 Email Address:
@@ -38,7 +38,7 @@ const EmailModal = (props) => {
                 sparklebiswas@gmail.com
             </p>
             <Tooltip title='Copy'>
-              <ContentCopyIcon sx={{color:'rgb(85, 9, 185)', cursor: 'pointer'}} onClick={handleClick}/>
+              <ContentCopyIcon sx={{color:'rgb(25, 79, 228)', cursor: 'pointer'}} onClick={handleClick}/>
             </Tooltip>
           </div>
         </div>

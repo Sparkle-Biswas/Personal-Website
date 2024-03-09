@@ -1,0 +1,67 @@
+.budgitNavigation {
+    display: flex;
+    background-color: black;
+    height: 11vh;
+    border: 2px solid rgb(25, 79, 228);
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    max-width: fit-content;
+    border-radius: 0.5em;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-left: 4vw;
+    box-shadow: -5px 5px 0px rgb(90, 126, 225);
+  }
+  
+  .budgitNavigation:hover {
+    cursor: pointer;
+  }
+
+  .campuslinkNavigation {
+    display: flex;
+    background-color: black;
+    height: 11vh;
+    border: 2px solid rgb(25, 79, 228);
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin-left: 2vw;
+    border-radius: 0.5em;
+    max-width: fit-content;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    box-shadow: -5px 5px 0px rgb(90, 126, 225);
+  }
+
+  .campuslinkNavigation:hover {
+    cursor: pointer;
+  }
+
+  .personalNavigation {
+    display: flex;
+    background-color: black;
+    height: 11vh;
+    border-radius: 0.5em;
+    border: 2px solid rgb(25, 79, 228);
+    justify-content: center;
+    box-shadow: -5px 5px 0px rgb(90, 126, 225);
+    align-items: center;
+    gap: 1vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+  }
+
+  .personalNavigation:hover {
+    cursor: pointer;
+  }
+  
+  .websiteHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .websiteHeader:hover {
+    cursor: pointer;
+  }
