@@ -22,7 +22,6 @@ import budgitVideo from '../Assets/budgitVideo.mp4'
 import personalVideo from '../Assets/personalVid.mp4'
 import campuslinkVideo from '../Assets/campuslink.mp4'
 import { motion } from 'framer-motion'
-import ImageCarousel from '../Components/Carousel'
 import HomeNavbar from '../Components/HomeNavbar'
 
 function Projects() {
