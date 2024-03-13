@@ -114,18 +114,18 @@ function Projects() {
             <div className='budgitNavigation'
             onClick={scrollToBudgitSection}>
               <h4 style={{color:'rgb(68, 194, 137)', fontFamily: 'Kanit, sans-serif', fontSize:'1.8vw'}}>BUDGIT</h4>
-              <WalletIcon sx={{color:'rgb(68, 194, 137)'}}/>
+              <WalletIcon className='hoverSpinDiv' sx={{color:'rgb(68, 194, 137)'}}/>
             </div>
             <div className='campuslinkNavigation'
             onClick={scrollToCampuslinkSection}
             >
               <h4 style={{color:'aliceblue', fontFamily: 'Kanit, sans-serif', fontSize:'1.8vw'}}>CAMPUSLINK</h4>
-              <AccountBalanceIcon sx={{color:'aliceblue'}}/>
+              <AccountBalanceIcon className='hoverSpinDiv' sx={{color:'aliceblue'}}/>
             </div>
             <div className='personalNavigation'
             onClick={scrollToPersonalSection}>
               <h4 style={{color:'rgb(25, 79, 228)', fontFamily: 'Kanit, sans-serif', fontSize:'1.8vw'}}>PERSONAL WEBSITE</h4>
-              <ExtensionIcon sx={{color:'rgb(25, 79, 228)'}}/>
+              <ExtensionIcon className='hoverSpinDiv' sx={{color:'rgb(25, 79, 228)'}}/>
             </div>
           </div>
         </div>
@@ -266,9 +266,6 @@ function Projects() {
               </Tooltip>
               <Tooltip title='Javascript' placement='bottom'>
                 <img src={JavascriptIcon} alt="Javascript-Icon" style={{width:'2vw'}} />
-              </Tooltip>
-              <Tooltip title='Firebase' placement='bottom'>
-                <img src={FirebaseIcon} alt="Firebase-Icon" style={{width:'2vw'}} />
               </Tooltip>
             </div>
           </div>
