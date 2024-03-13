@@ -19,6 +19,8 @@ import MaterialUIIcon from '../Assets/materialUI.svg'
 import JavascriptIcon from '../Assets/javascript.svg'
 import MongodbIcon from '../Assets/mongodb.svg'
 import budgitVideo from '../Assets/budgitVideo.mp4'
+import personalVideo from '../Assets/personalVid.mp4'
+import campuslinkVideo from '../Assets/campuslink.mp4'
 import { motion } from 'framer-motion'
 import ImageCarousel from '../Components/Carousel'
 import HomeNavbar from '../Components/HomeNavbar'
@@ -137,7 +139,7 @@ function Projects() {
       <div style={{display:'flex', flexDirection:'column', width:'90%', alignSelf:'center', marginTop:'6em', paddingBottom:'5em', gap:"6em"}}>
         <div ref={budgitRef} style={{height:'1vh',width:'100%', background:'transparent'}} />
         <div style={{backgroundColor: 'black', border :'2px solid rgb(25, 79, 228)', display:'flex',
-          gap:'1em', padding:'1em',  alignItems:'center',boxShadow:'-5px 5px 0px rgb(90, 126, 225)', borderRadius:'0.5em'}}>
+          gap:'1em', paddingRight:'1em', paddingLeft:"1em",  alignItems:'center',boxShadow:'-5px 5px 0px rgb(90, 126, 225)', borderRadius:'0.5em'}}>
           <div style={{width:'40%', paddingRight:'2em'}}>
             <Tooltip title='Check out Budgit!' placement='top-end'>
             <div className='websiteHeader'  onClick={goToBudgit}>
@@ -183,7 +185,7 @@ function Projects() {
 
         </div>
         <div style={{backgroundColor: 'black', border :'2px solid rgb(25, 79, 228)', display:'flex',
-          gap:'1em', padding:'1em',  alignItems:'center',boxShadow:'-5px 5px 0px rgb(90, 126, 225)', borderRadius:'0.5em'}}>
+          gap:'1em', paddingRight:'1em', paddingLeft:"1em",  alignItems:'center',boxShadow:'-5px 5px 0px rgb(90, 126, 225)', borderRadius:'0.5em'}}>
           <div style={{width:'40%', paddingRight:'2em'}}>
             <Tooltip title='Check out CampusLink!' placement='top-end'>
             <div className='websiteHeader'  onClick={goToCampusLink}>
@@ -198,7 +200,7 @@ function Projects() {
               hosting, and editing online learning resources. This application aims to combine the best 
               features of other learning platforms like Brightspace and Canvas!
             </p>
-            <p style={{ fontSize:'1.5vw', marginTop:'6vh', textDecoration:'underline', textShadow: '0px 0px 0px black'}}>
+            <p style={{ fontSize:'1.5vw', marginTop:'1vh', textDecoration:'underline', textShadow: '0px 0px 0px black'}}>
               Main Technologies:
             </p>
             <div style={{display:'flex', gap:'2vw', marginTop:'2vh'}}>
@@ -223,7 +225,9 @@ function Projects() {
             </div>
           </div>
           <div style={{width:'60%'}}>
-            <ImageCarousel/>
+            <video src = {campuslinkVideo} autoPlay loop muted
+            style={{width:'100%', padding:'0', height:'100%',display:'block !important', borderRadius:'1em'}}
+            />
           </div>
         </div>
         <div ref={personalRef} 
@@ -244,7 +248,7 @@ function Projects() {
               hosting, and editing online learning resources. This application aims to combine the best 
               features of other learning platforms like Brightspace and Canvas!
             </p>
-            <p style={{ fontSize:'1.5vw', marginTop:'6vh', textDecoration:'underline', textShadow: '0px 0px 0px black'}}>
+            <p style={{ fontSize:'1.5vw', marginTop:'1vh', textDecoration:'underline', textShadow: '0px 0px 0px black'}}>
               Main Technologies:
             </p>
             <div style={{display:'flex', gap:'2vw', marginTop:'2vh'}}>
@@ -269,7 +273,9 @@ function Projects() {
             </div>
           </div>
           <div style={{width:'60%'}}>
-            <ImageCarousel/>
+            <video src = {personalVideo} autoPlay loop muted
+            style={{width:'100%', padding:'0', height:'100%',display:'block !important', borderRadius:'1em'}}
+            />
           </div>
         </div>
       </div>

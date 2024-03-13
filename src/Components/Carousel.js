@@ -11,7 +11,7 @@ import CalendarImg from '../Assets/calendar.png'
 
 function ImageCarousel() {
   return (
-    <div style={{backgroundColor:'black', height:'100%', width:'100%', marginBottom:'1em'}}>
+    <div style={{backgroundColor:'black', height:'100%', marginBottom:'1em'}}>
         <Carousel>
             <Paper>
                 <img src={AnnouncementImg} style={{width:'100%'}}/>
