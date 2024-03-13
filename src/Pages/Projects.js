@@ -172,7 +172,7 @@ function Projects() {
               BUDGIT is a web application that can be used to manage you expenses and subscriptions,
               join forums to discuss finance-related topics with other users and lastly you can invite
               your friends to 'budgit' with you!
-            </p>
+              This project was a group effort involving five individuals, with me leading the front-end development.</p>
             <p style={{ fontSize:'1.5vw', marginTop:'6vh', textDecoration:'underline', textShadow: '0px 0px 0px black'}}>
               Main Technologies:
             </p>
@@ -217,7 +217,8 @@ function Projects() {
             <p style={{color: 'aliceblue', fontSize:'1.3vw'}}>
               CAMPUSLINK is a online learning management system for creating, 
               hosting, and editing online learning resources. This application aims to combine the best 
-              features of other learning platforms like Brightspace and Canvas!
+              features of other learning platforms like Brightspace and Canvas! This was a group project 
+              and I was mainly responsible for the 'Courses', 'Announcements' and 'Grades' pages.
             </p>
             <p style={{ fontSize:'1.5vw', marginTop:'1vh', textDecoration:'underline', textShadow: '0px 0px 0px black'}}>
               Main Technologies:
@@ -265,8 +266,7 @@ function Projects() {
             <p style={{color: 'rgb(25, 79, 228)', fontSize:'1.3vw'}}>
               I created my PERSONAL WEBSITE to highlight my passion for design, coding and puzzles! 
               I mainly focused on creating a User Interface that is visually appealing while also focusing 
-              on my achievements and aspirations. I hope you had a great time visiting my website and getting 
-              to know about me! If you like to connect, please navigate to the homepage for my contact details!
+              on my achievements and aspirations. If you like to connect, please navigate to the homepage for my contact details!
             </p>
             <p style={{ color:'aliceblue', fontSize:'1.5vw', marginTop:'1vh', textDecoration:'underline', textShadow: '0px 0px 0px black'}}>
               Main Technologies:
