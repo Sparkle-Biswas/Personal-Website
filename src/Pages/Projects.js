@@ -98,34 +98,54 @@ function Projects() {
             
                 <p style={{fontSize:'1.5vw'}}>Check out my Projects on the Right!</p>
                 <p style={{fontSize:'1.5vw'}}>Main Technologies Used:</p>
-              <div style={{display:'flex', gap:'1vw'}}>
-                <img src={NodejsIcon} alt="Node.js-Icon" style={{width:'2vw'}} />
-                <img src={ReactIcon} alt="React-Icon" style={{width:'2vw'}} />
-                <img src={Css3Icon} alt="CSS3-Icon" style={{width:'2vw'}} />
-                <img src={FirebaseIcon} alt="Firebase-Icon" style={{width:'2vw'}} />
-                <img src={MaterialUIIcon} alt="MUI-Icon" style={{width:'2vw'}} />
-                <img src={JavascriptIcon} alt="Javascript-Icon" style={{width:'2vw'}} />
-                <img src={MongodbIcon} alt="MongoDB-Icon" style={{width:'2vw'}} />
+              <div style={{display:'flex', gap:'1.2vw'}}>
+                <Tooltip title='Node.js' placement='bottom'>
+                  <img src={NodejsIcon} alt="Node.js-Icon" style={{width:'2vw'}} />
+                </Tooltip>
+                <Tooltip title='CSS' placement='bottom'>
+                  <img src={Css3Icon} alt="CSS3-Icon" style={{width:'2vw'}} />
+                </Tooltip>
+                <Tooltip title='Material UI' placement='bottom'>
+                  <img src={MaterialUIIcon} alt="MUI-Icon" style={{width:'2vw'}} />
+                </Tooltip>
+                <Tooltip title='Javascript' placement='bottom'>
+                  <img src={JavascriptIcon} alt="Javascript-Icon" style={{width:'2vw'}} />
+                </Tooltip>
+                <Tooltip title='MongoDB' placement='bottom'>
+                  <img src={MongodbIcon} alt="MongoDB-Icon" style={{width:'2vw'}} />
+                </Tooltip>
+                <Tooltip title='React.js' placement='bottom'>
+                  <img src={ReactIcon} alt="React.js-Icon" style={{width:'2vw'}} />
+                </Tooltip>
+                <Tooltip title='Firebase' placement='bottom'>
+                  <img src={FirebaseIcon} alt="Firebase-Icon" style={{width:'2vw'}} />
+                </Tooltip>
               </div>
             </div>
           </div>
           <div style={{display:'flex', flexDirection:'column', gap:'15px', }}>
-            <div className='budgitNavigation'
-            onClick={scrollToBudgitSection}>
-              <h4 style={{color:'rgb(68, 194, 137)', fontFamily: 'Kanit, sans-serif', fontSize:'1.8vw'}}>BUDGIT</h4>
-              <WalletIcon className='hoverSpinDiv' sx={{color:'rgb(68, 194, 137)'}}/>
-            </div>
-            <div className='campuslinkNavigation'
-            onClick={scrollToCampuslinkSection}
-            >
-              <h4 style={{color:'aliceblue', fontFamily: 'Kanit, sans-serif', fontSize:'1.8vw'}}>CAMPUSLINK</h4>
-              <AccountBalanceIcon className='hoverSpinDiv' sx={{color:'aliceblue'}}/>
-            </div>
-            <div className='personalNavigation'
-            onClick={scrollToPersonalSection}>
-              <h4 style={{color:'rgb(25, 79, 228)', fontFamily: 'Kanit, sans-serif', fontSize:'1.8vw'}}>PERSONAL WEBSITE</h4>
-              <ExtensionIcon className='hoverSpinDiv' sx={{color:'rgb(25, 79, 228)'}}/>
-            </div>
+            <Tooltip title='Navigate to Budgit' placement='left'>
+              <div className='budgitNavigation'
+              onClick={scrollToBudgitSection}>
+                <h4 style={{color:'rgb(68, 194, 137)', fontFamily: 'Kanit, sans-serif', fontSize:'1.8vw'}}>BUDGIT</h4>
+                <WalletIcon className='hoverSpinDiv' sx={{color:'rgb(68, 194, 137)'}}/>
+              </div>
+            </Tooltip>
+            <Tooltip title='Navigate to CampusLink' placement='left'>
+              <div className='campuslinkNavigation'
+              onClick={scrollToCampuslinkSection}
+              >
+                <h4 style={{color:'aliceblue', fontFamily: 'Kanit, sans-serif', fontSize:'1.8vw'}}>CAMPUSLINK</h4>
+                <AccountBalanceIcon className='hoverSpinDiv' sx={{color:'aliceblue'}}/>
+              </div>
+            </Tooltip>
+            <Tooltip title='Navigate to Personal Website' placement='left'>
+              <div className='personalNavigation'
+              onClick={scrollToPersonalSection}>
+                <h4 style={{color:'rgb(25, 79, 228)', fontFamily: 'Kanit, sans-serif', fontSize:'1.8vw'}}>PERSONAL WEBSITE</h4>
+                <ExtensionIcon className='hoverSpinDiv' sx={{color:'rgb(25, 79, 228)'}}/>
+              </div>
+            </Tooltip>
           </div>
         </div>
         <div style={{width:'90%', height:'1em', backgroundColor:'black', borderRadius:'0.3em',

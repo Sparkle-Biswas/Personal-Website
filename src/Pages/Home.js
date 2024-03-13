@@ -229,10 +229,8 @@ function Home() {
                 </div>
               <div style={{transform: loaded ? 'translateX(0) translateY(0) rotate(90deg)' 
               : 'translateX(150%) translateY(-1000%) rotate(180deg)',
-              transition: 'transform 2s ease',
-              '&:hover': {
-                cursor: 'pointer',
-              }}}>
+              transition: 'transform 2s ease'
+              }}>
                 <Piece>
                   <WidgetsIcon className='x-widgetsIcon'/>
                 </Piece>
@@ -240,14 +238,15 @@ function Home() {
             </div>
           </Tooltip>
           <Tooltip title='About' placement='bottom'>
-            <div className='hoverDiv' style={rowPuzzleBox}>
-              
+            <div className='hoverDiv' style={rowPuzzleBox}
+            onClick={() => {
+              navigate("/about");
+            }}
+            > 
             <div style={{transform: loaded ? 'translateX(0) translateY(0) rotate(270deg)' : 'translateX(-150%) translateY(1000%) rotate(180deg)',
             transition: 'transform 2s ease', 
             transitionDelay: '1s',
-              '&:hover': {
-                cursor: 'pointer',
-              }, marginLeft:'-2.5em', marginBottom:'1.5em' 
+            marginLeft:'-2.5em', marginBottom:'1.5em' 
               }}>
                 <Piece>
                   <PersonPinIcon className='x-personIcon'/>
@@ -256,13 +255,9 @@ function Home() {
               <div style={{transform: loaded ? 'translateX(0) translateY(0) rotate(180deg)' : 'translateX(150%) translateY(1000%) rotate(180deg)',
               transition: 'transform 2s ease',
               transitionDelay: '1.5s',
-                  '&:hover': {
-                    cursor: 'pointer',
-                }, marginBottom:"-1em"
+              marginBottom:"-1em"
                 }}
-                onClick={() => {
-                  navigate("/about");
-              }}>
+                >
                   <Piece> 
                     <div style={{transform:'rotate(180deg)', marginRight:'1.1em', marginTop:'-0.3em'}}>
                       <div style={{display:'flex', justifyContent:'center'}}>
