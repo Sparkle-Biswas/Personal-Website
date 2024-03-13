@@ -85,8 +85,8 @@ function About() {
                   initial={{opacity:'0'}}
                   animate={{ opacity: 1, transition: { duration: 2, delay: 1.9 } }}
                 >
-                  <WorkIcon className='rotateDiv' sx={{color:'rgb(90, 126, 225)', fontSize:'2em'}}/>
-                  <p style={{fontSize:'1.5em', color:'rgb(90, 126, 225)'}}>INTERNSHIP</p>
+                  <WorkIcon className='rotateDiv' sx={{color:'rgb(68, 194, 137)', fontSize:'2em'}}/>
+                  <p style={{fontSize:'1.5em', color:'rgb(68, 194, 137)'}}>INTERNSHIP</p>
                 </motion.div>
               </Platform>
             </div>
@@ -99,8 +99,8 @@ function About() {
                 initial={{opacity:'0'}}
                 animate={{ opacity: 1, transition: { duration: 2, delay: 1.9 } }}
                 >
-                  <FaCrown className='rotateDiv' style={{color:'rgb(90, 126, 225)', fontSize:'2em'}}/>
-                  <p style={{fontSize:'1.5em', color:'rgb(90, 126, 225)'}}>LEADERSHIP</p>
+                  <FaCrown className='rotateDiv' style={{color:'aliceblue', fontSize:'2em'}}/>
+                  <p style={{fontSize:'1.5em', color:'aliceblue'}}>LEADERSHIP</p>
                 </motion.div>
               </Platform>
             </div>
@@ -116,8 +116,8 @@ function About() {
                 initial={{opacity:'0'}}
                 animate={{ opacity: 1, transition: { duration: 2, delay: 1.9 } }}
                 >
-                  <SchoolIcon className='rotateDiv' sx={{color:'rgb(90, 126, 225)', fontSize:'2.2em'}}/>
-                  <p style={{fontSize:'1.5em', color:'rgb(90, 126, 225)'}}>EDUCATION</p>
+                  <SchoolIcon className='rotateDiv' sx={{color:'rgb(188, 162, 77)', fontSize:'2.2em'}}/>
+                  <p style={{fontSize:'1.5em', color:'rgb(188, 162, 77)'}}>EDUCATION</p>
                 </motion.div>
               </Platform>
             </div>
@@ -145,7 +145,7 @@ function About() {
            height:'fit-content', backgroundColor:'black',border:'2px solid rgb(25, 79, 228)', padding:'1em',
            width:'90%', marginLeft:'1em', alignItems:'center', marginBottom:'1em', boxShadow: ' 0px 1px 12px 1px rgb(25, 79, 228)'}}>
             <div style={{width:'60%'}}>
-              <h2 style={{color:'rgb(90, 126, 225)'}}>Intern at BlackRock</h2>
+              <h2 style={{color:'rgb(68, 194, 137)', textShadow: '0px 0px 0px black'}}>Intern at BlackRock</h2>
               <hr style={{backgroundColor:'rgb(90, 126, 225)', height: '2px', border:'none'}}/>
               <p style={{fontSize:'1.2em', color:'rgb(90, 126, 225)'}}>
                 I had the opportunity to intern with BlackRock during summer 2022 where
@@ -170,7 +170,7 @@ function About() {
            height:'fit-content', backgroundColor:'black',border:'2px solid rgb(25, 79, 228)', padding:'1em',
            width:'90%', marginLeft:'1em', alignItems:'center', marginBottom:'1em', boxShadow: ' 0px 1px 12px 1px rgb(25, 79, 228)'}}>
             <div style={{width:'60%'}}>
-              <h2 style={{color:'rgb(90, 126, 225)'}}>Purdue University</h2>
+              <h2 style={{color:'rgb(188, 162, 77)', textShadow: '0px 0px 0px black'}}>Purdue University</h2>
               <hr style={{backgroundColor:'rgb(90, 126, 225)', height: '2px', border:'none'}}/>
               <p style={{fontSize:'1.2em', color:'rgb(90, 126, 225)'}}>
                 I recently graduated with a Bachelor’s in Computer Science from Purdue University 
@@ -193,7 +193,7 @@ function About() {
            height:'fit-content', backgroundColor:'black',border:'2px solid rgb(25, 79, 228)', padding:'1em',
            width:'90%', marginLeft:'1em', alignItems:'center', marginBottom:'1em', boxShadow: ' 0px 1px 12px 1px rgb(25, 79, 228)'}}>
             <div style={{width:'60%'}}>
-              <h2 style={{color:'rgb(90, 126, 225)'}}>Building Manager At Krach</h2>
+              <h2 style={{color:'aliceblue', textShadow: '0px 0px 0px black'}}>Building Manager At Krach</h2>
               <hr style={{backgroundColor:'rgb(90, 126, 225)', height: '2px', border:'none'}}/>
               <p style={{fontSize:'1.2em', color:'rgb(90, 126, 225)'}}>
               My part-time position as a Building Manager at Krach Leadership center
@@ -218,7 +218,7 @@ function About() {
            height:'fit-content', backgroundColor:'black',border:'2px solid rgb(25, 79, 228)', padding:'1em',
            width:'90%', marginLeft:'1em', alignItems:'center', marginBottom:'1em', boxShadow: ' 0px 1px 12px 1px rgb(25, 79, 228)'}}>
             <div style={{width:'60%'}}>
-              <h2 style={{color:'rgb(90, 126, 225)'}}>Project Lead At PSUB</h2>
+              <h2 style={{color:'rgb(90, 126, 225)', textShadow: '0px 0px 0px black'}}>Project Lead At PSUB</h2>
               <hr style={{backgroundColor:'rgb(90, 126, 225)', height: '2px', border:'none'}}/>
               <p style={{fontSize:'1.2em', color:'rgb(90, 126, 225)'}}>
               As a member of the Purdue Student Union Board (PSUB) I spearheaded

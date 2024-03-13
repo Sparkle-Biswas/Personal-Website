@@ -243,11 +243,12 @@ function Projects() {
             <div style={{width:'100%', height:'0.2em', borderRadius:'0.3em',
             marginBottom:'1em', backgroundColor:'rgb(25, 79, 228)'}} />
             <p style={{color: 'rgb(25, 79, 228)', fontSize:'1.3vw'}}>
-              CAMPUSLINK is a online learning management system for creating, 
-              hosting, and editing online learning resources. This application aims to combine the best 
-              features of other learning platforms like Brightspace and Canvas!
+              I created my PERSONAL WEBSITE to highlight my passion for design, coding and puzzles! 
+              I mainly focused on creating a User Interface that is visually appealing while also focusing 
+              on my achievements and aspirations. I hope you had a great time visiting my website and getting 
+              to know about me! If you like to connect, please navigate to the homepage for my contact details!
             </p>
-            <p style={{ fontSize:'1.5vw', marginTop:'1vh', textDecoration:'underline', textShadow: '0px 0px 0px black'}}>
+            <p style={{ color:'aliceblue', fontSize:'1.5vw', marginTop:'1vh', textDecoration:'underline', textShadow: '0px 0px 0px black'}}>
               Main Technologies:
             </p>
             <div style={{display:'flex', gap:'2vw', marginTop:'2vh'}}>

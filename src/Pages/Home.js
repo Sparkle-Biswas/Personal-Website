@@ -19,6 +19,7 @@ function Home() {
 
 
   const [loaded, setLoaded] = useState(false);
+  const [allLoaded, setAllLoaded] = useState(false);
   const navigate = useNavigate();
 
   const mainBox = {
@@ -127,8 +128,16 @@ function Home() {
       }, 300);
 
       return () => clearTimeout(timer);
-
   }, []);
+
+  useEffect(() => {
+    const timer1 = setTimeout(() => {
+      setAllLoaded(true);
+      }, 4000);
+  
+    return () => clearTimeout(timer1);
+}, []);
+  
 
   const [open, setOpen] = useState(false);
 
@@ -159,7 +168,7 @@ function Home() {
     initial={{opacity: 0}}
     animate={{opacity:'100%', transition:{duration:1}}}
     exit={{opacity: 0}}
-    style={{overflow:'hidden'}}
+    style={{overflow: allLoaded ? 'auto' : 'hidden'}}
     >
       <div style={{width:'100%', height:'100%', overflow:'hidden', position:'absolute'}}>
         <video src = {abstractVideo} autoPlay loop muted playbackRate={0.2}
