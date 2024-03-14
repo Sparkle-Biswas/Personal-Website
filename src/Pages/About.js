@@ -5,7 +5,7 @@ import { Tooltip } from '@mui/material'
 import HomeNavbar from '../Components/HomeNavbar'
 import Platform from '../Components/Platform'
 import BigPlatform from '../Components/BigPlatform'
-import abstractVideo from '../Assets/abstract.mp4';
+import abstractVideo from './abstract.mp4';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import PersonPinIcon from '@mui/icons-material/PersonPin';

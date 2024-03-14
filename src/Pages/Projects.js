@@ -10,7 +10,7 @@ import ExtensionIcon from '@mui/icons-material/Extension'
 import EjectRoundedIcon from '@mui/icons-material/EjectRounded'
 import '../Styles/App.css';
 import '../Styles/Projects.css';
-import abstractVideo from '../Assets/abstract.mp4';
+import abstractVideo from './abstract.mp4';
 import NodejsIcon from '../Assets/nodejsIcon.svg'
 import ReactIcon from '../Assets/reactIcon.svg'
 import Css3Icon from '../Assets/css3.svg'
