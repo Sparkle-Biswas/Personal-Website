@@ -10,7 +10,6 @@ import ResumePuzzle from '../Components/ResumePuzzle'
 import Piece from '../Components/Piece'
 import PersonPinIcon from '@mui/icons-material/PersonPin'
 import WidgetsIcon from '@mui/icons-material/Widgets'
-import abstractVideo from '../Assets/abstract.mp4'
 import { Tooltip } from '@mui/material'
 import { motion } from 'framer-motion'
 

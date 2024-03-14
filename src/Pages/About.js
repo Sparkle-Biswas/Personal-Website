@@ -5,7 +5,6 @@ import { Tooltip } from '@mui/material'
 import HomeNavbar from '../Components/HomeNavbar'
 import Platform from '../Components/Platform'
 import BigPlatform from '../Components/BigPlatform'
-import abstractVideo from '../Assets/abstract.mp4'
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
@@ -69,9 +68,11 @@ function About() {
     exit={{opacity:'0' , transition:{duration:0.2}}}>
       <HomeNavbar/>
       <div style={{width:'100%', height:'100%', overflow:'hidden', position:'absolute', zIndex:'-1'}}>
-        <video src = {abstractVideo} autoPlay loop muted  playbackRate={0.2}
+        <video autoPlay loop muted  playbackRate={0.2}
           style={{width:'100%', padding:'0', opacity:'40%'}}
-        />
+        >
+          <source src={'https://firebasestorage.googleapis.com/v0/b/sparkle-biswas.appspot.com/o/abstract.mp4?alt=media&token=31d76519-a393-4156-8ad0-f2757bb50016'} type='video/mp4'/>
+        </video>
       </div>
       <div style={{display:'flex', flexDirection:'column', gap:'5em', width:"100%",
        alignItems:'center',  zIndex:'2', justifyContent:'center',

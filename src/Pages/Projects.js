@@ -10,7 +10,6 @@ import ExtensionIcon from '@mui/icons-material/Extension'
 import EjectRoundedIcon from '@mui/icons-material/EjectRounded'
 import '../Styles/App.css';
 import '../Styles/Projects.css';
-import abstractVideo from '../Assets/abstract.mp4'
 import NodejsIcon from '../Assets/nodejsIcon.svg'
 import ReactIcon from '../Assets/reactIcon.svg'
 import Css3Icon from '../Assets/css3.svg'
@@ -18,9 +17,6 @@ import FirebaseIcon from '../Assets/firebase.svg'
 import MaterialUIIcon from '../Assets/materialUI.svg'
 import JavascriptIcon from '../Assets/javascript.svg'
 import MongodbIcon from '../Assets/mongodb.svg'
-import budgitVideo from '../Assets/budgitVideo.mp4'
-import personalVideo from '../Assets/personalVid.mp4'
-import campuslinkVideo from '../Assets/campuslink.mp4'
 import { motion } from 'framer-motion'
 import HomeNavbar from '../Components/HomeNavbar'
 
@@ -77,9 +73,11 @@ function Projects() {
     exit={{opacity:'0' , transition:{duration:0.2}}}>
       <HomeNavbar/>
       <div style={{width:'100%', height:'100%', overflow:'hidden', position:'absolute', zIndex:'-1'}}>
-        <video src = {abstractVideo} autoPlay loop muted  playbackRate={0.2}
+        <video autoPlay loop muted  playbackRate={0.2}
           style={{width:'100%', padding:'0', opacity:'30%'}}
-        />
+        >
+          <source src={'https://firebasestorage.googleapis.com/v0/b/sparkle-biswas.appspot.com/o/abstract.mp4?alt=media&token=31d76519-a393-4156-8ad0-f2757bb50016'} type='video/mp4'/>
+        </video>
       </div>
       <div className='balanceDiv' style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'10px', marginTop:'3em', boxSizing: 'border-box'}}>
         <div style={{display:'flex', width:'80%', justifyContent:'space-between'}}>
@@ -195,7 +193,7 @@ function Projects() {
             </div>
           </div>
           <div style={{width:'60%'}}>
-            <video src = {budgitVideo} autoPlay loop muted
+            <video src = {'https://firebasestorage.googleapis.com/v0/b/sparkle-biswas.appspot.com/o/budgitVideo.mp4?alt=media&token=5f99b2a3-4287-47d0-987d-cefea06798f6'} autoPlay loop muted
             style={{width:'100%', padding:'0', height:'100%',display:'block !important', borderRadius:'1em'}}
             />
           </div>
@@ -245,7 +243,7 @@ function Projects() {
             </div>
           </div>
           <div style={{width:'60%'}}>
-            <video src = {campuslinkVideo} autoPlay loop muted
+            <video src = {'https://firebasestorage.googleapis.com/v0/b/sparkle-biswas.appspot.com/o/campuslink.mp4?alt=media&token=038a17b1-34eb-4d28-ad11-6e4cf6a6e4e4'} autoPlay loop muted
             style={{width:'100%', padding:'0', height:'100%',display:'block !important', borderRadius:'1em'}}
             />
           </div>
@@ -290,7 +288,7 @@ function Projects() {
             </div>
           </div>
           <div style={{width:'60%'}}>
-            <video src = {personalVideo} autoPlay loop muted
+            <video src = {'https://firebasestorage.googleapis.com/v0/b/sparkle-biswas.appspot.com/o/personalVid.mp4?alt=media&token=206d15a7-12cf-492a-be5f-cc74d5589429'} autoPlay loop muted
             style={{width:'100%', padding:'0', height:'100%',display:'block !important', borderRadius:'1em'}}
             />
           </div>
