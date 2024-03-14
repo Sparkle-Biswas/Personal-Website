@@ -10,7 +10,7 @@ import ResumePuzzle from '../Components/ResumePuzzle'
 import Piece from '../Components/Piece'
 import PersonPinIcon from '@mui/icons-material/PersonPin'
 import WidgetsIcon from '@mui/icons-material/Widgets'
-import abstractVideo from './abstract.mp4'
+import abstractVideo from '../Assets/abstract.mp4'
 import { Tooltip } from '@mui/material'
 import { motion } from 'framer-motion'
 
@@ -174,7 +174,7 @@ function Home() {
         <video autoPlay loop muted playbackRate={0.2}
           style={{width:'100%', padding:'0', opacity:'70%'}}
         >
-          <source src={abstractVideo} type='video/mp4'/>
+          <source src={'https://firebasestorage.googleapis.com/v0/b/sparkle-biswas.appspot.com/o/abstract.mp4?alt=media&token=31d76519-a393-4156-8ad0-f2757bb50016'} type='video/mp4'/>
         </video>
       </div>
       <div style={mainBox}>
