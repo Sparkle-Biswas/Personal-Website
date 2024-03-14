@@ -12,7 +12,7 @@ import PersonPinIcon from '@mui/icons-material/PersonPin';
 import WidgetsIcon from '@mui/icons-material/Widgets';
 import abstractVideo from '../Assets/abstract.mp4';
 import { Tooltip } from '@mui/material';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 
 function Home() {
@@ -171,9 +171,11 @@ function Home() {
     style={{overflow: allLoaded ? 'auto' : 'hidden'}}
     >
       <div style={{width:'100%', height:'100%', overflow:'hidden', position:'absolute'}}>
-        <video src = {abstractVideo} autoPlay loop muted playbackRate={0.2}
+        <video autoPlay loop muted playbackRate={0.2}
           style={{width:'100%', padding:'0', opacity:'70%'}}
-        />
+        >
+          <source src={abstractVideo} type='video/mp4'/>
+        </video>
       </div>
       <div style={mainBox}>
         <div style={transitionBox}>
