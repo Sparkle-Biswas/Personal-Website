@@ -113,7 +113,12 @@ p{
   display: flex; 
   flex-direction: row;
 }
-
+.linkIcon {
+  font-size: 5em;
+  color:aliceblue;
+  position:absolute;
+  z-index:100;
+}
 .RightBox {
   width: 2em;
   height: 24.88em;
@@ -181,6 +186,49 @@ p{
   .pieceTransition {
     transition: transform 0s ease;
   }
+}
+
+@media (max-width: 620px) {
+  .RightBox {
+    width: 2em;
+    height: 24.88em;
+    transform: skew(0deg,-47deg);
+    margin-right: -11px;
+    margin-top: 19px;
+  }
+  
+  .bottomBox {
+    width: 85vw;
+    height: 2.18em;
+    transform: skew(-42deg);
+    background-color: black;
+    margin-left: -8px;
+    border: 2px solid rgb(25, 79, 228);
+  }
+  .puzzlecontentBox {
+    width: 85vw;
+    border-top: 2px solid rgb(25, 79, 228);
+    border-right: 2px solid rgb(25, 79, 228);
+    min-height: 25em;
+    margin-left: 11px;
+    align-items: center;
+    justify-content: center;
+  }
+  .fullName {
+    font-size: 7vw;
+  }
+
+  .keyWord {
+    font-size: 3.5vw;
+  }
+
+  .innerSocialBox {
+    font-size: 3.2vw;
+  }
+  .linkIcon {
+    font-size: 0.5vw;
+  }
+
 }
 /* Animations */
 .spinDiv {

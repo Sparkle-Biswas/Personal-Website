@@ -26,7 +26,7 @@ function EmailPuzzle(props) {
   return (
     <Tooltip title='Email' placement='top'>
       <OutlineBox onClick={props.emailToggle}>
-          <AlternateEmailIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
+          <AlternateEmailIcon className='linkIcon' />
           <ExtensionIcon sx={{transform:'rotate(90deg)', fontSize:'5em', color: 'rgb(25, 79, 228)'}}/>
       </OutlineBox>
     </Tooltip>

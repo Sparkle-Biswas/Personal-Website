@@ -88,11 +88,11 @@ function Home() {
             <div className='puzzlecontentBox'>
               <div className='contentCenteredBox'>
                 <div className='contentBox' >
-                  <h2 style={{textShadow: '0px 0px 0px black'}}>SPARKLE BISWAS</h2>
-                  <p style={{color: 'rgb(90, 126, 225)'}}>Designer | Programmer | Problem Solver | Leader</p>
+                  <h2 className='fullName' style={{textShadow: '0px 0px 0px black'}}>SPARKLE BISWAS</h2>
+                  <p className='keyWord' style={{color: 'rgb(90, 126, 225)'}}>Designer | Programmer | Problem Solver | Leader</p>
                   <div className='schoolBox'>
                     <SchoolIcon sx={{color: 'rgb(90, 126, 225)'}}/>
-                    <p style={{color: 'rgb(90, 126, 225)'}}>Purdue University CS '23</p>
+                    <p className='keyWord' style={{color: 'rgb(90, 126, 225)'}}>Purdue University CS '23</p>
                   </div>
                   <div className='socialBox'>
                     <div className='innerSocialBox'>

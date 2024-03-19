@@ -27,7 +27,7 @@ function ResumePuzzle(props) {
     <Tooltip title='Resume'>
       <OutlineBox sx={{marginTop:'-0.5em'}} 
       onClick={props.resumeToggle}>
-          <DescriptionIcon sx={{color:'aliceblue', fontSize:'x-large', position:'absolute', zIndex:'100'}} />
+          <DescriptionIcon className='linkIcon' />
           <ExtensionIcon sx={{transform:'rotate(0deg)', fontSize:'5em', color: 'rgb(25, 79, 228)'}}/>
       </OutlineBox>
     </Tooltip>
