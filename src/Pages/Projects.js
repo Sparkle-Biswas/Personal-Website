@@ -171,7 +171,7 @@ function Projects() {
               join forums to discuss finance-related topics with other users and lastly you can invite
               your friends to 'budgit' with you!
               This project was a group effort involving five individuals, with me leading the front-end development.</p>
-            <p style={{ fontSize:'1.5vw', marginTop:'6vh', textDecoration:'underline', textShadow: '0px 0px 0px black'}}>
+            <p style={{ fontSize:'1.5vw', marginTop:'1vh', textDecoration:'underline', textShadow: '0px 0px 0px black'}}>
               Main Technologies:
             </p>
             <div style={{display:'flex', gap:'2vw', marginTop:'2vh'}}>

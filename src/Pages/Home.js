@@ -1,4 +1,5 @@
 import '../Styles/App.css'
+import '../Styles/Piece.css'
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from "react-router-dom"
 import EmailModal from '../Components/EmailModal'
@@ -21,106 +22,7 @@ function Home() {
   const [allLoaded, setAllLoaded] = useState(false);
   const navigate = useNavigate();
 
-  const mainBox = {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '4em',
-    paddingTop: '4.5em',
-    paddingLeft: '3em'
-  };
-  
-  const transitionBox = {
-    display: 'flex',
-    flexDirection: 'row',
-    padding: '1em',
-    transform: loaded ? 'translateX(0)' : 'translateX(-110%)',
-    transition: 'transform 1.3s ease',
-    marginRight:'4em'
-  };
-
-  const puzzleColBox = {
-    display: 'flex', 
-    flexDirection:'column'
-  };
-
-  const puzzlecontentBox = {
-    display: 'flex',
-    flexDirection: 'column',
-    backgroundColor: 'black',
-    width: '31em',
-    borderTop: '2px solid rgb(25, 79, 228)',
-    borderRight: '2px solid rgb(25, 79, 228)',
-    minHeight: '25em',
-    marginLeft: '11px',
-    alignItems: 'center',
-    justifyContent: 'center'
-  };
-
-  const contentCenteredBox = {
-    height: '95%',
-    width: '95%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  };
-
-  const contentBox = {
-    display: 'flex',
-    height: '95%',
-    width: '95%',
-    alignItems: 'center',
-    flexDirection: 'column',
-    gap: '0.5em'
-  };
-
-  const schoolBox = {
-    display:'flex', 
-    alignItems:'center', 
-    gap:'10px'
-  };
-
-  const socialBox = { 
-    display:'flex', 
-    flexDirection:'column', 
-    marginTop:'2.5em'
-  };
-
-  const innerSocialBox = {
-    display:'flex', 
-    flexDirection:'row'
-  };
-
-  const RightBox = {
-    width: '2em',
-    height: '24.88em',
-    backgroundColor: 'black',
-    transform: 'skew(0deg,-47deg)',
-    marginRight:'-11px',
-    marginTop:'19px',
-    border: '2px solid rgb(25, 79, 228)',
-  };
-
-  const bottomBox = {
-    width: '31em',
-    height: '2.18em',
-    transform: 'skew(-42deg)',
-    backgroundColor: 'black',
-    marginLeft:'-8px',
-    border: '2px solid rgb(25, 79, 228)',
-  };
-
-  const puzzleBox = {
-    display: 'flex',
-    flexDirection: 'column',
-    width: '60em',
-    backgroundColor: 'black',
-    marginTop:"1em"
-  };
-
-  const rowPuzzleBox = {
-    display:'flex'
-  }
-  
+ 
   useEffect(() => {
       const timer = setTimeout(() => {
       setLoaded(true);
@@ -167,34 +69,37 @@ function Home() {
     initial={{opacity: 0}}
     animate={{opacity:'100%', transition:{duration:1}}}
     exit={{opacity: 0}}
-    style={{overflow: allLoaded ? 'auto' : 'hidden'}}
+    style={{display:'flex', flexDirection:'column', height:'100vh',width:'100vw', overflowX:'hidden'
+    }}
     >
-      <div style={{width:'100%', height:'100%', overflow:'hidden', position:'absolute'}}>
-        <video autoPlay loop muted playbackRate={0.2}
-          style={{width:'100%', padding:'0', opacity:'70%'}}
+      <div style={{width:'100%', height:'100%', overflow:'hidden', position:'absolute', zIndex:'-1'}}>
+        <video autoPlay loop muted  playbackRate={0.2}
+          style={{width:'100%', padding:'0', opacity:'40%'}}
         >
           <source src={'https://firebasestorage.googleapis.com/v0/b/sparkle-biswas.appspot.com/o/abstract.mp4?alt=media&token=31d76519-a393-4156-8ad0-f2757bb50016'} type='video/mp4'/>
         </video>
       </div>
-      <div style={mainBox}>
-        <div style={transitionBox}>
-          <div style={RightBox} />       
-          <div style={puzzleColBox}>
-            <div style={puzzlecontentBox}>
-              <div style={contentCenteredBox}>
-                <div style={contentBox} >
+      <div className='Box'>
+        <div className='transitionBox' style={{
+          transform: loaded ? 'translateX(0)' : 'translateX(-110%)',
+        }}>
+          <div className='RightBox' />       
+          <div className='puzzleColBox'>
+            <div className='puzzlecontentBox'>
+              <div className='contentCenteredBox'>
+                <div className='contentBox' >
                   <h2 style={{textShadow: '0px 0px 0px black'}}>SPARKLE BISWAS</h2>
                   <p style={{color: 'rgb(90, 126, 225)'}}>Designer | Programmer | Problem Solver | Leader</p>
-                  <div style={schoolBox}>
+                  <div className='schoolBox'>
                     <SchoolIcon sx={{color: 'rgb(90, 126, 225)'}}/>
                     <p style={{color: 'rgb(90, 126, 225)'}}>Purdue University CS '23</p>
                   </div>
-                  <div style={socialBox}>
-                    <div style={innerSocialBox}>
+                  <div className='socialBox'>
+                    <div className='innerSocialBox'>
                       <EmailPuzzle emailToggle={emailToggle}/>
                       <GithubPuzzle gitToggle={gitToggle}/>
                     </div>
-                    <div style={innerSocialBox}>
+                    <div className='innerSocialBox'>
                       <LinkedinPuzzle linkToggle={linkToggle}/>
                       <ResumePuzzle resumeToggle={resumeToggle}/>
                     </div>
@@ -202,20 +107,19 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div style={bottomBox} />
+            <div className='bottomBox' />
           </div>
         </div>
-        <div style={puzzleBox}>
+        <div className='puzzleBox'>
           <Tooltip title='Projects' placement='top'>
-            <div className='hoverDiv' style={{display:'flex', marginBottom:'-1em'}} 
+            <div className='rowPuzzleBox' style={{ marginBottom:'-1em'}} 
             onClick={() => {
                   navigate("/Projects");
                 }}>
               
-                <div style={{transform: loaded
+                <div className='pieceTransition' style={{transform: loaded
                   ? 'translateX(0) translateY(0)'
                   : 'translateX(-110%) translateY(-1000%) rotate(180deg)',
-                  transition: 'transform 2s ease',
                   transitionDelay: '0.5s',
                   marginTop:'-2.5em', 
                 }}>
@@ -228,9 +132,8 @@ function Home() {
                     </div>
                   </Piece>
                 </div>
-              <div style={{transform: loaded ? 'translateX(0) translateY(0) rotate(90deg)' 
-              : 'translateX(150%) translateY(-1000%) rotate(180deg)',
-              transition: 'transform 2s ease'
+              <div className='pieceTransition' style={{transform: loaded ? 'translateX(0) translateY(0) rotate(90deg)' 
+              : 'translateX(150%) translateY(-1000%) rotate(180deg)'
               }}>
                 <Piece>
                   <WidgetsIcon className='x-widgetsIcon'/>
@@ -239,13 +142,13 @@ function Home() {
             </div>
           </Tooltip>
           <Tooltip title='About' placement='bottom'>
-            <div className='hoverDiv' style={rowPuzzleBox}
+            <div className='rowPuzzleBox' style={{ marginRight:'2.5em'}} 
             onClick={() => {
               navigate("/about");
             }}
             > 
-            <div style={{transform: loaded ? 'translateX(0) translateY(0) rotate(270deg)' : 'translateX(-150%) translateY(1000%) rotate(180deg)',
-            transition: 'transform 2s ease', 
+            <div className='pieceTransition' 
+            style={{transform: loaded ? 'translateX(0) translateY(0) rotate(270deg)' : 'translateX(-150%) translateY(1000%) rotate(180deg)',
             transitionDelay: '1s',
             marginLeft:'-2.5em', marginBottom:'1.5em' 
               }}>
@@ -253,14 +156,14 @@ function Home() {
                   <PersonPinIcon className='x-personIcon'/>
                 </Piece>
             </div>
-              <div style={{transform: loaded ? 'translateX(0) translateY(0) rotate(180deg)' : 'translateX(150%) translateY(1000%) rotate(180deg)',
-              transition: 'transform 2s ease',
+              <div className='pieceTransition' 
+              style={{transform: loaded ? 'translateX(0) translateY(0) rotate(180deg)' : 'translateX(150%) translateY(1000%) rotate(180deg)',
               transitionDelay: '1.5s',
               marginBottom:"-1em"
                 }}
                 >
                   <Piece> 
-                    <div style={{transform:'rotate(180deg)', marginRight:'1.1em', marginTop:'-0.3em'}}>
+                    <div style={{transform:'rotate(180deg)', marginRight:'0.8em', marginTop:'-0.3em'}}>
                       <div style={{display:'flex', justifyContent:'center'}}>
                         <PersonPinIcon className='icon'/>
                       </div>

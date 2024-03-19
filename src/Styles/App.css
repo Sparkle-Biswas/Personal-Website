@@ -41,6 +41,148 @@ p{
   text-shadow: 0px 0px 9px rgb(25, 79, 228);
 }
 
+/*  Homepage Styling   */
+.Box {
+  display: flex;
+  align-items: center;
+  gap: 7em;
+  padding-top: 4.5em;
+  padding-left: 3em;
+}
+
+.transitionBox {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  margin-right: 4em;
+  transition: transform 1.3s ease;
+}
+
+.pieceTransition {
+  transition: transform 2s ease;
+}
+
+.puzzleColBox {
+  display: flex; 
+  flex-direction: column;
+}
+
+.puzzlecontentBox {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  width: 31em;
+  border-top: 2px solid rgb(25, 79, 228);
+  border-right: 2px solid rgb(25, 79, 228);
+  min-height: 25em;
+  margin-left: 11px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentCenteredBox {
+  height: 95%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox {
+  display: flex;
+  height: 95%;
+  width: 95%;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.schoolBox {
+  display: flex; 
+  align-items: center; 
+  gap: 10px;
+}
+
+.socialBox { 
+  display: flex; 
+  flex-direction: column; 
+  margin-top: 2.5em;
+}
+
+.innerSocialBox {
+  display: flex; 
+  flex-direction: row;
+}
+
+.RightBox {
+  width: 2em;
+  height: 24.88em;
+  background-color: black;
+  transform: skew(0deg,-47deg);
+  margin-right: -11px;
+  margin-top: 19px;
+  border: 2px solid rgb(25, 79, 228);
+}
+
+.bottomBox {
+  width: 31em;
+  height: 2.18em;
+  transform: skew(-42deg);
+  background-color: black;
+  margin-left: -8px;
+  border: 2px solid rgb(25, 79, 228);
+}
+
+.puzzleBox {
+  display: flex;
+  flex-direction: column;
+  width: 60em;
+  background-color: transparent;
+  margin-top: 1em;
+}
+
+.rowPuzzleBox {
+  display: flex;
+}
+
+.rowPuzzleBox:hover {
+  cursor: pointer;
+}
+
+@media (min-width:1190px) and (max-width: 1250px) {
+  .Box {
+    gap: 1.5em;
+  }
+}
+@media (max-width: 1191px) {
+  .Box {
+    gap: 7vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  .Box {
+    gap: 1vw;
+  }
+}
+@media (max-width: 1050px) {
+  .Box {
+    flex-direction: column;
+    gap: 9em;
+  }
+  .puzzleBox {
+    display: flex;
+    flex-direction: column;
+    width: 60em;
+    background-color: transparent;
+    align-items: center;
+    margin-top: 1em;
+  }
+  .pieceTransition {
+    transition: transform 0s ease;
+  }
+}
+/* Animations */
 .spinDiv {
   animation-name: spin;
   animation-duration: 2500ms;
@@ -49,7 +191,7 @@ p{
   
 }
 .spinDiv:hover {
-  cursor: 'pointer',
+  cursor: 'pointer';
 }
 
 .hoverSpinDiv {
@@ -112,33 +254,27 @@ p{
   cursor: pointer;
   
 }
-.hoverDiv:hover .pieceText{
+.rowPuzzleBox:hover .pieceText{
   color: rgb(198, 228, 253);
 }
 
-.hoverDiv:hover .icon{
+.rowPuzzleBox:hover .icon{
   color: rgb(198, 228, 253);
 }
 
-.hoverDiv:hover .x-widgetsIcon{
+.rowPuzzleBox:hover .x-widgetsIcon{
   color: rgb(198, 228, 253);
 }
 
-.hoverDiv:hover .x-personIcon{
+.rowPuzzleBox:hover .x-personIcon{
   color: rgb(198, 228, 253);
 }
 
-.hoverDiv:hover .pieceText{
+
+.rowPuzzleBox:hover .personIcon{
   color: rgb(198, 228, 253);
 }
 
-.hoverDiv:hover .personIcon{
-  color: rgb(198, 228, 253);
-}
-
-.hoverDiv:hover .x-personIcon{
-  color: rgb(198, 228, 253);
-}
 
 
 .transitionPlatform:hover .rotateDiv {
@@ -299,3 +435,4 @@ p{
 .websiteHeader:hover {
   cursor: pointer;
 }
+

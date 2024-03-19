@@ -146,9 +146,9 @@ function About() {
            height:'fit-content', backgroundColor:'black',border:'2px solid rgb(25, 79, 228)', padding:'1em',
            width:'90%', marginLeft:'1em', alignItems:'center', marginBottom:'1em', boxShadow: ' 0px 1px 12px 1px rgb(25, 79, 228)'}}>
             <div style={{width:'60%'}}>
-              <h2 style={{color:'rgb(68, 194, 137)', textShadow: '0px 0px 0px black'}}>Intern at BlackRock</h2>
+              <h2 style={{fontSize:'2.5vw',color:'rgb(68, 194, 137)', textShadow: '0px 0px 0px black'}}>Intern at BlackRock</h2>
               <hr style={{backgroundColor:'rgb(90, 126, 225)', height: '2px', border:'none'}}/>
-              <p style={{fontSize:'1.2em', color:'rgb(90, 126, 225)'}}>
+              <p style={{fontSize:'1.6vw', color:'rgb(90, 126, 225)'}}>
                 I had the opportunity to intern with BlackRock during summer 2022 where
                  I  collaborated with senior engineers to address a complex design problem,
                   where our goal was to make the main app service scalable, transitioning 
@@ -171,9 +171,9 @@ function About() {
            height:'fit-content', backgroundColor:'black',border:'2px solid rgb(25, 79, 228)', padding:'1em',
            width:'90%', marginLeft:'1em', alignItems:'center', marginBottom:'1em', boxShadow: ' 0px 1px 12px 1px rgb(25, 79, 228)'}}>
             <div style={{width:'60%'}}>
-              <h2 style={{color:'rgb(188, 162, 77)', textShadow: '0px 0px 0px black'}}>Purdue University</h2>
+              <h2 style={{fontSize:'2.5vw',color:'rgb(188, 162, 77)', textShadow: '0px 0px 0px black'}}>Purdue University</h2>
               <hr style={{backgroundColor:'rgb(90, 126, 225)', height: '2px', border:'none'}}/>
-              <p style={{fontSize:'1.2em', color:'rgb(90, 126, 225)'}}>
+              <p style={{fontSize:'1.6vw', color:'rgb(90, 126, 225)'}}>
                 I recently graduated with a Bachelor’s in Computer Science from Purdue University 
                 in December 2023. During the past four years, I acquired proficiency in multiple programming
                 languages, including Java, Javscript, C, and Python, through coursework and internship projects.  
@@ -194,17 +194,15 @@ function About() {
            height:'fit-content', backgroundColor:'black',border:'2px solid rgb(25, 79, 228)', padding:'1em',
            width:'90%', marginLeft:'1em', alignItems:'center', marginBottom:'1em', boxShadow: ' 0px 1px 12px 1px rgb(25, 79, 228)'}}>
             <div style={{width:'60%'}}>
-              <h2 style={{color:'aliceblue', textShadow: '0px 0px 0px black'}}>Building Manager At Krach</h2>
+              <h2 style={{fontSize:'2.5vw', color:'aliceblue', textShadow: '0px 0px 0px black'}}>Building Manager At Krach</h2>
               <hr style={{backgroundColor:'rgb(90, 126, 225)', height: '2px', border:'none'}}/>
-              <p style={{fontSize:'1.2em', color:'rgb(90, 126, 225)'}}>
+              <p style={{fontSize:'1.6vw', color:'rgb(90, 126, 225)'}}>
               My part-time position as a Building Manager at Krach Leadership center
                taught me valuable problem-solving skills and refined my interpersonal 
                abilities while overseeing the daily operations of the building. 
-               I trained over 10 employees how to navigate the reservation system and
+               I trained over 10 employees on how to navigate the reservation system and
                 handle managerial duties. Additionally, I oversaw the booking system 
-                for more than 10 building areas, managing both room and game equipment
-                 reservations. Furthermore, I ensured the smooth operation of a 
-                 three-story building housing university offices and an outdoor lounge. 
+                for more than 10 building areas, managing both room and game equipment reservations. 
               </p>
             </div>
             <div style={{width:'35%'}}>
@@ -219,9 +217,9 @@ function About() {
            height:'fit-content', backgroundColor:'black',border:'2px solid rgb(25, 79, 228)', padding:'1em',
            width:'90%', marginLeft:'1em', alignItems:'center', marginBottom:'1em', boxShadow: ' 0px 1px 12px 1px rgb(25, 79, 228)'}}>
             <div style={{width:'60%'}}>
-              <h2 style={{color:'rgb(90, 126, 225)', textShadow: '0px 0px 0px black'}}>Project Lead At PSUB</h2>
+              <h2 style={{fontSize:'2.5vw',color:'rgb(90, 126, 225)', textShadow: '0px 0px 0px black'}}>Project Lead At PSUB</h2>
               <hr style={{backgroundColor:'rgb(90, 126, 225)', height: '2px', border:'none'}}/>
-              <p style={{fontSize:'1.2em', color:'rgb(90, 126, 225)'}}>
+              <p style={{fontSize:'1.6vw', color:'rgb(90, 126, 225)'}}>
               As a member of the Purdue Student Union Board (PSUB) I spearheaded
                a team of students in organizing and budgeting for five or more
                events each semester, with up to 100 attendees per event. Additionally, I 
