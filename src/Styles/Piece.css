@@ -82,7 +82,7 @@
 
 
   
-@media (min-width: 1051px) and (max-width: 1190px) {
+@media (max-width:500px) or ((min-width: 1051px) and (max-width: 1190px)) {
   .mainBox {
     display: flex;
     width: 11.7em;

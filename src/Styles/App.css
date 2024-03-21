@@ -42,6 +42,13 @@ p{
 }
 
 /*  Homepage Styling   */
+
+.homeVideo {
+  height:100%;
+  padding:0;
+  opacity:40%;
+  
+}
 .Box {
   display: flex;
   align-items: center;

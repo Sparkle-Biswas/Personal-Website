@@ -74,7 +74,7 @@ function Projects() {
       <HomeNavbar/>
       <div style={{width:'100%', height:'100%', overflow:'hidden', position:'absolute', zIndex:'-1'}}>
         <video autoPlay loop muted  playbackRate={0.2}
-          style={{width:'100%', padding:'0', opacity:'30%'}}
+          className='homeVideo'
         >
           <source src={'https://firebasestorage.googleapis.com/v0/b/sparkle-biswas.appspot.com/o/abstract.mp4?alt=media&token=31d76519-a393-4156-8ad0-f2757bb50016'} type='video/mp4'/>
         </video>
