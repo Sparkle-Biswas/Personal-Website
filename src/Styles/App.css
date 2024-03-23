@@ -44,7 +44,7 @@ p{
 /*  Homepage Styling   */
 
 .homeVideo {
-  height:100%;
+  width: 100%;
   padding:0;
   opacity:40%;
   
@@ -236,6 +236,11 @@ p{
     font-size: 0.5vw;
   }
 
+  .homeVideo {
+    height: 100%;
+    
+  }
+
 }
 /* Animations */
 .spinDiv {
@@ -376,13 +381,23 @@ p{
   animation-duration: 6000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  display: flex;
+  flex-direction:column; 
+  align-items:center;
+  gap:10px;
+  margin-top:3em;
 }
 
-.balanceDiv:hover {
-  animation-name: balance;
-  animation-duration: 0ms;
-
+.projectNavSection {
+  display:flex;
+  flex-direction:column;
+  gap:15px;
 }
+
+.balanceDiv:hover{
+  animation-duration: 0ms;  
+}
+
 
 
 @keyframes balance {

@@ -9,7 +9,6 @@ import AccountBalanceIcon from '@mui/icons-material/AccountBalance'
 import ExtensionIcon from '@mui/icons-material/Extension'
 import EjectRoundedIcon from '@mui/icons-material/EjectRounded'
 import '../Styles/App.css';
-import '../Styles/Projects.css';
 import NodejsIcon from '../Assets/nodejsIcon.svg'
 import ReactIcon from '../Assets/reactIcon.svg'
 import Css3Icon from '../Assets/css3.svg'
@@ -79,7 +78,7 @@ function Projects() {
           <source src={'https://firebasestorage.googleapis.com/v0/b/sparkle-biswas.appspot.com/o/abstract.mp4?alt=media&token=31d76519-a393-4156-8ad0-f2757bb50016'} type='video/mp4'/>
         </video>
       </div>
-      <div className='balanceDiv' style={{display:'flex', flexDirection:'column', alignItems:'center', gap:'10px', marginTop:'3em', boxSizing: 'border-box'}}>
+      <div className='balanceDiv' >
         <div style={{display:'flex', width:'80%', justifyContent:'space-between'}}>
 
           <div style={{display:'flex', flexDirection:'column', gap:'1px'}}>
@@ -121,7 +120,7 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div style={{display:'flex', flexDirection:'column', gap:'15px', }}>
+          <div className='projectNavSection' >
             <Tooltip title='Navigate to Budgit' placement='left'>
               <div className='budgitNavigation'
               onClick={scrollToBudgitSection}>
