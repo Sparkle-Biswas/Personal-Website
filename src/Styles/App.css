@@ -193,6 +193,11 @@ p{
   .pieceTransition {
     transition: transform 0s ease;
   }
+
+  .homeVideo {
+    height: 100%;
+    width: auto;
+  }
 }
 
 @media (max-width: 620px) {
@@ -238,7 +243,7 @@ p{
 
   .homeVideo {
     height: 100%;
-    
+    width: auto;
   }
 
 }
