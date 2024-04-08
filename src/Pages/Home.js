@@ -60,14 +60,14 @@ function Home() {
   };
 
   const resumeToggle = () => {
-    window.open('https://drive.google.com/file/d/1xGVvYA5rv0zDEuk47EMX-oKSiGjKfFfy/view?usp=sharing', '_blank');    
+    window.open('https://drive.google.com/file/d/1ZEr3_U0pPaVEKtsOeb3Um3N2DU5xZE4w/view?usp=sharing', '_blank');    
   };
   
 
   return (
     <motion.div 
     initial={{opacity: 0}}
-    animate={{opacity:'100%', transition:{duration:1}}}
+    animate={{opacity:'100%', transition:{duration:2}}}
     exit={{opacity: 0}}
     style={{display:'flex', flexDirection:'column', height:'100vh',width:'100vw', overflowX:'hidden'
     }}
